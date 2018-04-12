@@ -1,13 +1,23 @@
 .navbar {
+    display: block;
     position: fixed;
     top: 0;
     left: 0;
     width: 10em;
     height: 100%;
-    background: #42e8f4;
-    border-right: 0.1em solid black;
+    background: #333;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0.5em;
+}
+.navbar a {
+    background-color: #999;
+    color: #fff;
+    padding: 0.2em;
     text-decoration: none;
-    z-index: 1;
+}
+.navbar a:hover {
+    background-color: #666;
+    padding: 0.5em 0.2em 0.5em 0.2em
 }
 .title {
     top: 1em;
@@ -19,7 +29,7 @@
 
 }
 .body {
-    background: white;
+    background:white;
     width: 50em;
     padding: 10px;
     top: 5em;
