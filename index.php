@@ -10,7 +10,7 @@
             position: fixed;
             top 0;
             left 0;
-            width: 4em;
+            width: 8em;
             height: 100%;
             background: #42e8f4;
             border-right: 0.1em solid black;
