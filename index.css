@@ -7,19 +7,19 @@
     height: 100%;
     background: #333;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: 0.5em;
+    padding: 1em;
+    z-index: 1;
 }
 .navbar a {
     background-color: #999;
     color: #fff;
-    padding-top: 0.2em;
-    padding-bottom: 0.2em;
+    padding: 1em;
     text-decoration: none;
 
 }
 .navbar a:hover {
     background-color: #666;
-    padding: 0.5em 0.2em 0.5em 0.2em
+    padding: 1em 0.5em 1em 0.5em
 }
 .title {
     top: 1em;
