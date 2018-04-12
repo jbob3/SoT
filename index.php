@@ -16,10 +16,15 @@
             border-right: 0.1em solid black;
         }
         .title {
-            top: 10em;
+            top: 3em;
             position: fixed;
             margin: auto;
             text-align: center;
+            width: 100%;
+            padding: 10px;
+        }
+        .body {
+            background: #33cc33;
             width: 100%;
             padding: 10px;
         }
@@ -47,6 +52,9 @@
         
         echo "<div id='title' class='title'>";
         echo "<h1>Welcome to the SoT control panel!</h1>";
+        echo "</div>";
+
+        echo "<p class='body'> Click on the menu item describing what you would like to do! </p>";
 
         
         ?>
