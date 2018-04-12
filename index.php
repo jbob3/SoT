@@ -10,7 +10,7 @@
             position: fixed;
             top: 0;
             left: 0;
-            width: 8em;
+            width: 10em;
             height: 100%;
             background: #42e8f4;
             border-right: 0.1em solid black;
@@ -27,6 +27,8 @@
             background: #33cc33;
             width: 100%;
             padding: 10px;
+            top: 5em;
+            left: 10em;
         }
         </style>
     </head>
