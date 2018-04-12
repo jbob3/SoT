@@ -6,7 +6,7 @@
         <title>SoT control</title>
         <link rel="stylesheet" href="index.css" />
         <style type="text/css">
-        a.navbar {
+        .navbar {
             position: absolute;
             top 2em;
             left 1em;
