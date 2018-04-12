@@ -24,9 +24,10 @@
             $html .= "</nav>\n";
             return $html;
         }
-
+        echo "<div id='nav'>";
         echo generateMenu($menu, "navbar");
-        
+        echo "</div>";
+
         echo "<div id='title' class='title'>";
         echo "<h1>Welcome to the SoT control panel!</h1>";
         echo "</div>";
