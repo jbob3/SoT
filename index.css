@@ -1,6 +1,30 @@
 <style type="text/css">
-.navbar {display block;
-    background-color:#333;
-    font-family:Veranda;
-    padding:0.5em;
-}
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 10em;
+            height: 100%;
+            background: #42e8f4;
+            border-right: 0.1em solid black;
+            text-decoration: none;
+            z-index: 1;
+        }
+        .title {
+            top: 1em;
+            position: fixed;
+            margin: auto;
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+
+        }
+        .body {
+            background: white;
+            width: 50em;
+            padding: 10px;
+            top: 5em;
+            left: 11em;
+            position: fixed;
+        }
+        </style>
