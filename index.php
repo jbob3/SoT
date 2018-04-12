@@ -21,9 +21,9 @@
     <body>
         <?php
         $menu = array(
-            'home' => array('text'=>'Home', 'url'=>'?p=home'),
-            'away' => array('text'=>'Away', 'url'=>'?p=away'),
-            'about' => array('text'=>'About', 'url'=>'?p=about'),
+            'home' => array('text'=>'Home', 'url'=>'index.php'),
+            'away' => array('text'=>'SIEM Management', 'url'=>'siem.php'),
+            'about' => array('text'=>'Arming', 'url'=>'arm.php'),
         );
 
         function generateMenu($items, $class) {
