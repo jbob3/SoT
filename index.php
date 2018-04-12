@@ -16,7 +16,7 @@
             border-right: 0.1em solid black;
         }
         .title {
-            top: 3em;
+            top: 1em;
             position: fixed;
             margin: auto;
             text-align: center;
@@ -24,11 +24,11 @@
             padding: 10px;
         }
         .body {
-            background: #33cc33;
+            background: white;
             width: 50em;
             padding: 10px;
             top: 5em;
-            left: 10em;
+            left: 11em;
             position: fixed;
         }
         </style>
