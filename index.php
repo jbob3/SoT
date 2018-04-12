@@ -9,10 +9,10 @@
         .navbar {
             position: sticky;
             top 0;
-            left 1em;
-            width: 3em;
+            left 0;
+            width: 10%;
             background: #42e8f4;
-            border-right: 0.5em solid black;
+            border-right: 0.1em solid black;
         }
         </style>
     </head>
