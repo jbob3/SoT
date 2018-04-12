@@ -10,7 +10,9 @@
             position: absolute;
             top 2em;
             left 1em;
-            width: 3em; 
+            width: 3em;
+            background: blue;
+            border-right: 1em solid black;
         }
         </style>
     </head>
