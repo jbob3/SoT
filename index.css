@@ -12,8 +12,10 @@
 .navbar a {
     background-color: #999;
     color: #fff;
-    padding: 0.2em;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
     text-decoration: none;
+
 }
 .navbar a:hover {
     background-color: #666;
