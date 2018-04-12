@@ -19,6 +19,7 @@
             top: 10em;
             position: fixed;
             margin: auto;
+            text-align: center;
             width: 40%;
             padding: 10px;
         }
