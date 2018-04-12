@@ -20,7 +20,6 @@
             position: fixed;
             margin: auto;
             text-align: center;
-            width: 100%;
             padding: 10px;
         }
         .body {
