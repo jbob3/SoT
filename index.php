@@ -7,10 +7,11 @@
         <link rel="stylesheet" href="index.css" />
         <style type="text/css">
         .navbar {
-            position: sticky;
+            position: fixed;
             top 0;
             left 0;
-            width: 10%;
+            width: 4em;
+            height: 100%;
             background: #42e8f4;
             border-right: 0.1em solid black;
         }
