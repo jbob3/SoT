@@ -25,10 +25,11 @@
         }
         .body {
             background: #33cc33;
-            width: 100%;
+            width: 50em;
             padding: 10px;
             top: 5em;
             left: 10em;
+            position: fixed;
         }
         </style>
     </head>
