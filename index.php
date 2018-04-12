@@ -14,6 +14,8 @@
             height: 100%;
             background: #42e8f4;
             border-right: 0.1em solid black;
+            text-decoration: none;
+            z-index: 1;
         }
         .title {
             top: 1em;
@@ -21,6 +23,8 @@
             margin: auto;
             text-align: center;
             padding: 10px;
+            width: 100%;
+
         }
         .body {
             background: white;
