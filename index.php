@@ -17,14 +17,14 @@
         );
 
         function generateMenu($items, $class) {
-            $html = "<nav class='$class'>\n";
+            $html = "<div class='space'><nav class='$class'>\n";
             foreach($items as $item) {
-                $html .= "<a href='{$item['url']}'>{$item['text']}</a><br>\n";
+                $html .= "<a href='{$item['url']}'>{$item['text']}</a><br><br><br></div>\n";
             }
             $html .= "</nav>\n";
             return $html;
         }
-        echo "<div id='nav'>";
+        echo "<div id='nav' class='space'>";
         echo generateMenu($menu, "navbar");
         echo "</div>";
 
