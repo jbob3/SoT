@@ -20,7 +20,7 @@
             position: fixed;
             margin: auto;
             text-align: center;
-            width: 40%;
+            width: 100%;
             padding: 10px;
         }
         </style>
