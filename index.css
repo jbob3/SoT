@@ -27,16 +27,15 @@
     position: fixed;
     margin: auto;
     text-align: center;
-    padding: 10px;
+    padding: 2px;
     width: 100%;
 
 }
 .body {
     background:white;
-    width: 50em;
-    padding: 10px;
-    top: 5em;
-    left: 11em;
+    width: 80%;
+    top: 13em;
+    left: 13em;
     position: fixed;
 }
 .space {

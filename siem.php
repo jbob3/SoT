@@ -1,11 +1,24 @@
+<!DOCTYPE html>
 <html>
-<head></head>
-<body>
+    <head>
+        <meta charset="utf-8" />
 
-<?php
+        <title>SoT control</title>
+        <link rel="stylesheet" href="index.css" />
+        
+    </head>
 
-echo "<h1>Change the address of your SIEM</h1>"
-
-?>
-
-</body>
+    <body>
+        <?php
+        include 'nav.php';
+       
+        echo "<div id='title' class='title'>";
+        echo "<h2>Enter the IP address of the SIEM: </h2>";
+        echo "</div>";
+        ?>
+        <div id='form' class='body'>
+        Name: <input type="text" name="name" value="<?php echo $name;?>">
+        </div>
+        
+    </body>
+    </html>
