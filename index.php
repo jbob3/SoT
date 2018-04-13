@@ -17,17 +17,15 @@
         );
 
         function generateMenu($items, $class) {
-            $html = "<div class='space'><nav class='$class'>\n";
+            $html = "<nav class='$class'>\n";
             foreach($items as $item) {
                 $html .= "<a href='{$item['url']}'>{$item['text']}</a><br><br><br></div>\n";
             }
             $html .= "</nav>\n";
             return $html;
         }
-        echo "<div id='nav' class='space'>";
         echo generateMenu($menu, "navbar");
-        echo "</div>";
-
+       
         echo "<div id='title' class='title'>";
         echo "<h1>Welcome to the SoT control panel!</h1>";
         echo "</div>";
