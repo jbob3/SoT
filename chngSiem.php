@@ -16,19 +16,13 @@
         echo "<h2>Enter the IP address of the SIEM: </h2>";
         echo "</div>";
         ?>
-        <div id='form' class='form' method="post">
-        <form action='/siem.php' class='form'>
+        <div id='form' class='form'>
+        <form action='/chngSiem.php' class='form'>
             IP:<br> 
             <input type="text" name="ipaddr" value="<?php echo $ipaddr;?>"><br><br>
             <input type="submit" value="Submit" size: "1em">
         </form>
         </div>
-        <?php
-            
-
-
-        ?>
-
         
     </body>
     </html>
