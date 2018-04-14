@@ -51,5 +51,14 @@
     width: 15em;
     left: 32%;
     position: fixed;
-    top: 15%;
+    top: 20%;
+}
+
+.form2 {
+    background: #999;
+    width: 15em;
+    left: 32%;
+    position: fixed;
+    top: 35%;
+    align-content: center;
 }

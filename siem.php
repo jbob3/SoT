@@ -20,19 +20,24 @@
         <div id='form' class='form'>
         <form action='/siem.php' class='form' method='get'>
             IP:<br> 
-            <input type="text" name="ipaddr" value="<?php echo $ipaddr;?>"><br><br>
+            <input type="text" name="ipaddr" value="<?php echo htmlspecialchars($_GET["ipaddr"]);?>"><br><br>
             <input type="submit" value="Submit" size: "1em">
         </form>
+        <hr>
         </div>
-        
-        <?php
-            $v=array();
-        
-            echo htmlspecialchars($_GET["ipaddr"]);
-         
+        <div id='newIP' class='form2'>
+        Now sending logs to:
+        <input type="text" name="ipaddr" value="<?php echo htmlspecialchars($_GET["ipaddr"]);?>"><br><br>
+        </div>
 
-        ?>
-        
-        
     </body>
     </html>
+
+    // ------------------------------------- PHP Magic ----------------------------------------------------------
+<?php
+
+    $v=array();
+
+    $v['ipaddr'] = $_GET["ipaddr"];
+
+?>
