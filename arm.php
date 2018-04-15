@@ -34,11 +34,8 @@
     </html>
 
 <?php
-    include 'arming.php';
+    include 'bin/arming.php';
 
-    $v[] = array();
-    $v['status'] = $_GET['status'];
-
-    ruleToggle($v['status']);
+    ruleToggle($_GET['status']);
     
 ?>
