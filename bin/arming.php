@@ -6,9 +6,7 @@ function snortToggle($status){
         #If yes run pkill snort
         exec('bin/snortKill.sh');
     }
-    elseif($status == 'on'){
-        exec('bin/sensorStart.sh > /dev/null 2>&1 &');
-    }
+    
     return;
 }
 
@@ -24,12 +22,16 @@ function arming($status){
     elseif($status == 'disarm') {
         exec('bin/disarmRules.sh');
     }
-    else {
-        snortToggle($status);
+    elseif($status == 'on'){
+        exec('bin/sensorStart.sh > /dev/null 2>&1 &');
+    }
+    elseif($status == 'off'){
+        #If yes run pkill snort
+        exec('bin/snortKill.sh');
     }
     #run sensorStart.sh
     #exec('bin/sensorStart.sh');
-    exec('bin/sensorStart.sh > /dev/null 2>&1 &');
+    #exec('bin/sensorStart.sh > /dev/null 2>&1 &');
 }
 
 
