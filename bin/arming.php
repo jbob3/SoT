@@ -14,7 +14,7 @@ function snortToggle($status){
 
 #Arm or disarm rules
 function arming($status){        
-    
+    exec('bin/snortKill.sh');
 #apply appropriate toggle
     #If arm cookie run arm.sh
     if($status == 'arm'){
@@ -29,7 +29,7 @@ function arming($status){
     }
     #run sensorStart.sh
     #exec('bin/sensorStart.sh');
-    
+    exec('bin/sensorStart.sh > /dev/null 2>&1 &');
 }
 
 
