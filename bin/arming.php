@@ -1,18 +1,19 @@
 <?php
 
 #turn snort on or off
-function snortToggle(){
-    exec("pgrep snort", $snortPID);
-    #check if snort running
-    if(empty($snortPID)){
+function snortToggle($status){
+    if($status == 'off'){
         #If yes run pkill snort
-        exec('sudo pkill snort');
+        exec('bin/snortKill.sh');
+    }
+    elseif($status == 'on'){
+        exec('bin/sensorStart.sh > /dev/null 2>&1 &');
     }
     return;
 }
 
 #Arm or disarm rules
-function ruleToggle($status){        
+function arming($status){        
     
 #apply appropriate toggle
     #If arm cookie run arm.sh
@@ -23,9 +24,12 @@ function ruleToggle($status){
     elseif($status == 'disarm') {
         exec('bin/disarmRules.sh');
     }
+    else {
+        snortToggle($status);
+    }
     #run sensorStart.sh
     #exec('bin/sensorStart.sh');
-    return;
+    
 }
 
 
