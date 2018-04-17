@@ -1,6 +1,12 @@
+<?php
+include_once 'bin/session.php';
 
-
-    <?php
+if ( $_SESSION["username"] != "" )
+{
+    $_SESSION["logged_in"] = true;
+}
+else
+{
 
 // Include config file
 
@@ -100,7 +106,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
                             save the username to the session */
 
-                            session_start();
+                            
 
                             $_SESSION['username'] = $username;      
 
@@ -220,4 +226,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 </body>
 
 </html>
-
+<?php
+exit;
+}
+?>

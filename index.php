@@ -1,5 +1,6 @@
 <?php
-include_once 'bin/forcelogin.php'
+include_once 'bin/session.php';
+include_once 'login.php';
 ?>
 
 <!DOCTYPE html>
