@@ -78,3 +78,21 @@
     top: 20%;
     padding: 2px;
 }
+.loginTitle {
+    top: 10%;
+    position: fixed;
+    margin: auto;
+    align-self: center;
+    padding: 2px;
+    width: 100%;
+    text-align: center;
+}
+.loginForm {
+    background: #999;
+    width: 15em;
+    top: 30%;
+    padding: 2px;
+    text-align: center;
+    display: inline-block;
+    max-height: 15em;
+}

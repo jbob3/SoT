@@ -4,6 +4,9 @@
 
 require_once 'bin/config.php';
 
+#if($_SESSION != 'admin'){
+ #   header("location: index.php");
+#}
  
 
 // Define variables and initialize with empty values

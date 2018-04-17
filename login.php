@@ -162,7 +162,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
     <title>Login</title>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
+    <link rel="stylesheet" href="index.css">
 
     <style type="text/css">
 
@@ -176,15 +176,15 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
 <body>
 
-    <div class="wrapper">
+    <div class="loginTitle">
 
-        <h2>Login</h2>
+        <h2>SoT Login</h2>
 
         <p>Please fill in your credentials to login.</p>
 
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
 
-            <div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
+            <div class="loginForm <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
 
                 <label>Username</label>
 
@@ -192,19 +192,20 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
                 <span class="help-block"><?php echo $username_err; ?></span>
 
-            </div>    
+            </div><br>  
 
-            <div class="form-group <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
+            <div class="loginForm <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
 
                 <label>Password</label>
 
                 <input type="password" name="password" class="form-control">
 
                 <span class="help-block"><?php echo $password_err; ?></span>
+                <span class="help-block"><?php echo $_SESSION["username"]; ?></span>
 
-            </div>
+            </div><br>
 
-            <div class="form-group">
+            <div class="loginForm">
 
                 <input type="submit" class="btn btn-primary" value="Login">
 
