@@ -18,11 +18,14 @@ include_once 'login.php';
        include 'nav.php';
        
         echo "<div id='title' class='title'>";
-        echo "<h1>Welcome to the SoT control panel!</h1>";
+        echo "<h1>Welcome to the SoT control panel!</h1><br><br>";
         echo "</div>";
 
-        echo "<p class='body'> Click on the menu item describing what you would like to do! </p>";
+        echo "<p class='body'> Click on the menu item describing what you would like to do! </p><br><br>";
 
+        if($_SESSION["username"] == 'admin'){
+            echo "<a href='register.php'>Add User</a>";
+        }
         
         ?>
         

@@ -1,23 +1,25 @@
 <?php
-include_once 'bin/forcelogin.php'
-?>
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8" />
+include_once 'bin/forcelogin.php';
+include_once 'bin/session.php';
 
-        <title>SoT control</title>
-        <link rel="stylesheet" href="index.css" />
-        
-    </head>
-<body>
-<?php
-    $menu = array(
+    if($_SESSION['username'] == 'admin'){
+        $menu = array(
+                'home' => array('text'=>'Home', 'url'=>'index.php'),
+                'siem' => array('text'=>'SIEM Management', 'url'=>'siem.php'),
+                'arming' => array('text'=>'Arming', 'url'=>'arm.php'),
+                'addUser' => array('text'=>'Add User', 'url'=>'register.php'),
+                'logout' => array('text'=>'Logout', 'url'=>'logout.php')
+            );
+    }
+    else{
+        $menu = array(
             'home' => array('text'=>'Home', 'url'=>'index.php'),
-            'away' => array('text'=>'SIEM Management', 'url'=>'siem.php'),
-            'about' => array('text'=>'Arming', 'url'=>'arm.php'),
+            'siem' => array('text'=>'SIEM Management', 'url'=>'siem.php'),
+            'arming' => array('text'=>'Arming', 'url'=>'arm.php'),
+            'logout' => array('text'=>'Logout', 'url'=>'logout.php')
         );
 
+    }
         function generateMenu($items, $class) {
             $html = "<nav class='$class'>\n";
             foreach($items as $item) {
@@ -29,5 +31,15 @@ include_once 'bin/forcelogin.php'
         echo generateMenu($menu, "navbar");
 
 ?>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+
+        <title>SoT control</title>
+        <link rel="stylesheet" href="index.css" />
+        
+    </head>
+<body>
 </body>
 </html>
