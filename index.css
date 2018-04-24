@@ -38,11 +38,12 @@
 .body {
     background:white;
     width: 80%;
-    top: 15%;
     left: 20%;
     position: fixed;
+    top: 30%;
     padding: 5px;
 }
+
 .space {
     margin: 1em;
 }

@@ -1,9 +1,9 @@
 <?php
 include_once 'bin/session.php';
 
-if ( $_SESSION["username"] != "" )
+if ( $_SESSION['username'] != "" )
 {
-    $_SESSION["logged_in"] = true;
+#    $_SESSION["logged_in"] = true;
 }
 else
 {
@@ -207,7 +207,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 <input type="password" name="password" class="form-control">
 
                 <span class="help-block"><?php echo $password_err; ?></span>
-                <span class="help-block"><?php echo $_SESSION["username"]; ?></span>
+               
 
             </div><br>
 
@@ -217,7 +217,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
             </div>
 
-            <p>Don't have an account? <a href="register.php">Sign up now</a>.</p>
+            
 
         </form>
 

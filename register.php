@@ -4,6 +4,7 @@
 
 require_once 'bin/config.php';
 include_once 'bin/session.php';
+include_once 'bin/adminOnly.php';
 
 #if($_SESSION != 'admin'){
  #   header("location: index.php");
