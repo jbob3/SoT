@@ -18,7 +18,7 @@ include_once 'login.php';
         include 'nav.php';
        
         echo "<div id='title' class='title'>";
-        echo "<h2>Enter the IP address of the SIEM: </h2>";
+        echo "<h2>What do you want to do to the gateway?: </h2>";
         echo "</div>";
         ?>
         <div id="form" class="form4">
