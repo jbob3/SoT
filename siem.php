@@ -1,6 +1,11 @@
 <?php
 include_once 'bin/session.php';
 include_once 'login.php';
+include_once 'bin/chngSiem.php';
+
+$v=array();
+
+$v['ipaddr'] = $_GET["ipaddr"];
 
 ?>
 <!DOCTYPE html>
@@ -23,7 +28,7 @@ include_once 'login.php';
         echo "</div>";
         ?>
         <div id='form' class='form'>
-        <form action='/siem.php' class='form' method='get'>
+        <form action='/bin/chngSiem.php' class='form' method='get'>
             IP:<br> 
             <input type="text" name="ipaddr" value="<?php echo htmlspecialchars($_GET["ipaddr"]);?>"><br><br>
             <input type="submit" value="Submit" size: "1em">
@@ -38,10 +43,3 @@ include_once 'login.php';
     </body>
     </html>
 
-<?php
-
-    $v=array();
-
-    $v['ipaddr'] = $_GET["ipaddr"];
-
-?>
